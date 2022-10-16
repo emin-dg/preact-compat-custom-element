@@ -1,4 +1,9 @@
-import { h, cloneElement, render, hydrate } from 'preact';
+import {
+	createElement as h,
+	cloneElement,
+	hydrate,
+	render,
+} from 'preact/compat';
 
 export default function register(Component, tagName, propNames, options) {
 	function PreactElement() {
